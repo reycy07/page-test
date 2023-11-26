@@ -14,9 +14,10 @@ const pageTitle = "Pagina de inicio"
         <meta name="generator" content={Astro.generator}>
         <title>{pageTitle}</title>
     </head>
-    <body>
+    <body class="container">
         <Header/>
         <h1>{pageTitle}</h1>
+        <slot/>
         <Footer/>
         <script>
             import "../scripts/menu.js";
